@@ -1,0 +1,63 @@
+body {
+  background-color: tomato;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+h1 {
+  text-decoration: underline;
+  text-decoration-color: #ff9999;
+  margin-top: 20px;
+}
+
+.rules {
+  margin: 20px auto;
+  text-align: left;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  gap: 5px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  border: 2px solid snow;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell img {
+  width: 80%;
+  height: 80%;
+  display: none;
+}
+
+button {
+  background-color: white;
+  color: tomato;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 0px #ff9999;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
